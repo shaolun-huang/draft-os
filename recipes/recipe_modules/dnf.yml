@@ -7,8 +7,12 @@ group-install:
   packages:
     - kde-desktop
 
-# install:
-#   packages:
+install:
+  packages:
+    - zsh
+    # Text editors
+    - vim-enhanced
+    - neovim
     
 remove:
   packages:
