@@ -20,15 +20,20 @@ modules:
   - type: dnf
     repos:
       copr:
+
+    group-install:
+      with-optional: true
+      packages:
+        kde-desktop
+
     install:
       packages:
-        - @kde-desktop-environment
       exclude:
-        - firefox
+
     remove:
       packages:
-        # - firefox
-        # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - firefox
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
   - type: default-flatpaks
     configurations:
