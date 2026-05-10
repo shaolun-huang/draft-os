@@ -17,5 +17,6 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   - from-file: recipe_modules/dnf.yml 
   - from-file: recipe_modules/flatpak.yml
+  - from-file: recipe_modules/nvidia.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
