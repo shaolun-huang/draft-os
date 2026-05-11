@@ -2,19 +2,20 @@ type: dnf
 # repos:
 #   copr:
 
-group-install:
-  with-optional: true
-  packages:
-    - kde-desktop
+# group-install:
+#   with-optional: true
+#   packages:
+#     - kde-desktop
 
 install:
   packages:
     - zsh
     # Text editors
     - vim-enhanced
-    - neovim
+    # - neovim
     
 remove:
   packages:
     - firefox
     - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+    - kate # KDE default text editor
