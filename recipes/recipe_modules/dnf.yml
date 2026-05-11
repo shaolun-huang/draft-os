@@ -24,6 +24,7 @@ install:
     - python3-envycontrol # Require enabling copr: sunwire/envycontrol
     - powertop
     - nix
+    - nix-daemon
     
 remove:
   packages:

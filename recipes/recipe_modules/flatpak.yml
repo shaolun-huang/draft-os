@@ -10,5 +10,5 @@ configurations:
   - scope: user # Also add Flathub user repo, but no user packages
     repo: 
       title: Flathub (user)
-    install: # system flatpaks we want all users to have and not remove
-      - net.waterfox.waterfox
+    # install: # system flatpaks we want all users to have and not remove
+    #   - net.waterfox.waterfox

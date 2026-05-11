@@ -1,0 +1,4 @@
+type: script
+snippets:
+  - "systemctl enable --now nix-daemon" # Enable Nix for package management
+
