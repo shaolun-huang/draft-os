@@ -1,6 +1,7 @@
 type: dnf
-# repos:
-#   copr:
+repos:
+  copr:
+    - sunwire/envycontrol
 
 # group-install:
 #   with-optional: true
@@ -9,13 +10,24 @@ type: dnf
 
 install:
   packages:
+    # Terminal 
     - zsh
+    # - alacritty
+    - stow
+    # - tmux
+
     # Text editors
     - vim-enhanced
     # - neovim
+
+    # System tools
+    - python3-envycontrol # Require enabling copr: sunwire/envycontrol
+    - powertop
+    - nix
     
 remove:
   packages:
     - firefox
     - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
     - kate # KDE default text editor
+    - htop # Useful for system monitor, but not necessary at this point
