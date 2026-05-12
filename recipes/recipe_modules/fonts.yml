@@ -1,0 +1,7 @@
+type: fonts
+fonts:
+  nerd-fonts:
+    - MesloLG
+  google-fonts:
+    - Noto Color Emoji
+    - Noto Emoji

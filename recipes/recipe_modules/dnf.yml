@@ -12,6 +12,7 @@ install:
   packages:
     # Terminal 
     - zsh
+    - terminus-fonts-console
     # - alacritty
     - stow
     # - tmux

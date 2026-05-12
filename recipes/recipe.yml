@@ -19,10 +19,11 @@ modules:
   - from-file: recipe_modules/nvidia.yml
   - from-file: recipe_modules/flatpak.yml
   - from-file: recipe_modules/dnf.yml 
+  - from-file: recipe_modules/fonts.yml
 
   - type: containerfile
     snippets: 
-      - RUN mkdir /nix /var/nix # Fix unable to write to Read-Only for Nix
+      - RUN mkdir -p /nix /var/nix # Fix unable to write to Read-Only for Nix
   
   - type: systemd
     system:
