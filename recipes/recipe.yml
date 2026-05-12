@@ -18,7 +18,7 @@ modules:
 
   - type: containerfile
     snippets: 
-      - RUN mkdir -p /nix /var/nix # Fix unable to write to Read-Only for Nix
+      - RUN mkdir -p /nix && mkdir -p /var/nix # Fix unable to write to Read-Only for Nix
   - type: systemd
     system:
       enabled: 
