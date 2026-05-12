@@ -16,19 +16,18 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - from-file: recipe_modules/nvidia.yml
-  - from-file: recipe_modules/flatpak.yml
-  - from-file: recipe_modules/dnf.yml 
-  - from-file: recipe_modules/fonts.yml
-
   - type: containerfile
     snippets: 
       - RUN mkdir -p /nix /var/nix # Fix unable to write to Read-Only for Nix
-  
   - type: systemd
     system:
       enabled: 
         - nix.mount
+
+  - from-file: recipe_modules/nvidia.yml
+  - from-file: recipe_modules/flatpak.yml
+  - from-file: recipe_modules/dnf.yml 
+  - from-file: recipe_modules/fonts.yml
 
   - from-file: recipe_modules/script.yml
 
