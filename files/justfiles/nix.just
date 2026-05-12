@@ -9,4 +9,3 @@ uninstall-determinate-nix:
     else
         echo "Not installed by the determinate nix installer"
     fi
-
