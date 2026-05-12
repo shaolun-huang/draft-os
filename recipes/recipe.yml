@@ -29,5 +29,7 @@ modules:
   - from-file: recipe_modules/dnf.yml 
   - from-file: recipe_modules/fonts.yml
 
+  - from-file: recipe_modules/just.yml
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
