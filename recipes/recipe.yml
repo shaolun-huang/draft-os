@@ -20,6 +20,15 @@ modules:
   - from-file: recipe_modules/flatpak.yml
   - from-file: recipe_modules/dnf.yml 
 
+  - type: containerfile
+    snippets: 
+      - RUN mkdir /nix /var/nix # Fix unable to write to Read-Only for Nix
+  
+  - type: systemd
+    system:
+      enabled: 
+        - nix.mount
+
   - from-file: recipe_modules/script.yml
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
