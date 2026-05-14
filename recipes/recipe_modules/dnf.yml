@@ -13,7 +13,7 @@ install:
     # Terminal 
     - zsh
     - terminus-fonts-console
-    # - alacritty
+    - alacritty
     - stow
     # - tmux
 
@@ -32,4 +32,5 @@ remove:
     - firefox
     - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
     - kate # KDE default text editor
+    - konsole # KDE default terminal emulator
     - htop # Useful for system monitor, but not necessary at this point
