@@ -22,7 +22,7 @@ modules:
       - RUN mkdir -p /nix # For the determinant Nix installer to work
 
   - from-file: recipe_modules/nvidia.yml
-  - from-file: recipe_modules/flatpak.yml
+  # - from-file: recipe_modules/flatpak.yml
   - from-file: recipe_modules/dnf.yml 
   - from-file: recipe_modules/fonts.yml
 
