@@ -24,8 +24,10 @@ install:
     # System tools
     - python3-envycontrol # Require enabling copr: sunwire/envycontrol
     - powertop
-    # - nix
-    # - nix-daemon
+
+    # Input methods
+    - fcitx5-chewing
+    - kcm-fcitx5
     
 remove:
   packages:
