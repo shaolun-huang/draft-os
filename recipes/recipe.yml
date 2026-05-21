@@ -24,7 +24,7 @@ modules:
   - from-file: recipe_modules/nvidia.yml
   - from-file: recipe_modules/dnf.yml 
   - from-file: recipe_modules/fonts.yml
-  - from-file: recipe_modules/flatpak.yml
+  # - from-file: recipe_modules/flatpak.yml
 
   - from-file: recipe_modules/just.yml
 
