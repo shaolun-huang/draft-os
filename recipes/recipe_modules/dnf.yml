@@ -30,17 +30,10 @@ install:
     - fcitx5-chewing
     - kcm-fcitx5
 
-  exclude:
-    # - firefox
-    # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-    # - kate # KDE default text editor
-    # - konsole # KDE default terminal emulator
-    - htop # Useful for system monitor, but not necessary at this point
-    
 remove:
   packages:
     - firefox
     - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
     - kate # KDE default text editor
     - konsole # KDE default terminal emulator
-    # - htop # Useful for system monitor, but not necessary at this point
+    - htop # Useful for system monitor, but not necessary at this point
