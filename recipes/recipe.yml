@@ -1,7 +1,4 @@
 ---
-# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-# image will be published to ghcr.io/<user>/<name>
-
 name: draft-os
 description: Personal bare bone image for my daily use
 
