@@ -25,6 +25,9 @@ modules:
   - from-file: recipe_modules/dnf.yml 
   - from-file: recipe_modules/fonts.yml
   # - from-file: recipe_modules/flatpak.yml
+  - type: script
+      snippets:
+        - "dnf autoremove -y"
 
   - from-file: recipe_modules/just.yml
 
