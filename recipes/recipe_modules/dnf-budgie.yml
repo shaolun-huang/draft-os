@@ -13,6 +13,8 @@ install:
   packages:
     # Desktop Environment
     - budgie-desktop
+    - greetd
+    - tuigreet # Console greeter for greetd, more options
 
     # Terminal 
     - zsh
