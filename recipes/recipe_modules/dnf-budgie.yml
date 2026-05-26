@@ -1,0 +1,44 @@
+type: dnf
+repos:
+  copr:
+    - sunwire/envycontrol
+  nonfree: rpmfusion
+
+# group-install:
+#   with-optional: true
+#   packages:
+#     - kde-desktop
+
+install:
+  packages:
+    # Desktop Environment
+    - budgie-desktop
+
+    # Terminal 
+    - zsh
+    - terminus-fonts-console
+    - alacritty
+    - stow
+    # - tmux
+
+    # Text editors
+    - vim-enhanced
+    # - neovim
+
+    # System tools
+    - python3-envycontrol # Require enabling copr: sunwire/envycontrol
+    - powertop
+
+    # Input methods
+    - fcitx5-chewing
+    - kcm-fcitx5
+
+remove:
+  auto-remove: true
+  packages:
+    - firefox
+    - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+    - kate # KDE default text editor
+    - konsole # KDE default terminal emulator
+    - htop # Useful for system monitor, but not necessary at this point
+
