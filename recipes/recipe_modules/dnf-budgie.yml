@@ -4,17 +4,17 @@ repos:
     - sunwire/envycontrol
   nonfree: rpmfusion
 
-# group-install:
-#   with-optional: true
-#   packages:
-#     - kde-desktop
+group-install:
+  with-optional: true
+  packages:
+    - budgie-desktop
+  autoremove: true
 
 install:
   packages:
     # Desktop Environment
-    - budgie-desktop
-    - greetd
-    - tuigreet # Console greeter for greetd, more options
+    # - greetd
+    # - tuigreet # Console greeter for greetd, more options
 
     # Terminal 
     - zsh
