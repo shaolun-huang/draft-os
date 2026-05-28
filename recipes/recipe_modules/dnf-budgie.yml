@@ -1,7 +1,8 @@
 type: dnf
 repos:
   copr:
-    - sunwire/envycontrol
+    enable:
+      - sunwire/envycontrol
   nonfree: rpmfusion
 
 group-install:
