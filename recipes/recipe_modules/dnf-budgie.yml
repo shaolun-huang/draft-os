@@ -4,11 +4,10 @@ repos:
     - sunwire/envycontrol
   nonfree: rpmfusion
 
-# group-install:
-#   with-optional: true
-#   packages:
-#     - budgie-desktop
-#   autoremove: true
+group-install:
+  with-optional: true
+  packages:
+    - budgie-desktop
 
 install:
   packages:
