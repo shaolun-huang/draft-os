@@ -41,8 +41,8 @@ remove:
   packages:
     - nvtop
 
-replace:
-  - packages:
-    - old: lightdm
-      new: greetd
-      allow-erasing: true
+# replace:
+#   - packages:
+#     - old: lightdm
+#       new: greetd
+#       allow-erasing: true
