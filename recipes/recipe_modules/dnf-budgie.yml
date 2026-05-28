@@ -1,8 +1,7 @@
 type: dnf
 repos:
   copr:
-    enable:
-      - sunwire/envycontrol
+    - sunwire/envycontrol
   nonfree: rpmfusion
 
 group-install:
@@ -41,8 +40,8 @@ remove:
   packages:
     - nvtop
 
-# replace:
-#   - packages:
-#       - old: lightdm
-#         new: greetd
-#         allow-erasing: true
+replace:
+  - packages:
+    - old: lightdm
+        new: greetd
+        allow-erasing: true
