@@ -13,7 +13,7 @@ install:
   packages:
     # Desktop Environment
     # - greetd
-    # - tuigreet # Console greeter for greetd, more options
+    - tuigreet # Console greeter for greetd, more options
 
     # Terminal 
     - zsh
@@ -29,6 +29,7 @@ install:
     # System tools
     - python3-envycontrol # Require enabling copr: sunwire/envycontrol
     - powertop
+    - btop
 
     # Input methods
     - fcitx5-chewing
@@ -37,9 +38,10 @@ install:
 remove:
   auto-remove: true
   packages:
-    - firefox
-    - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-    - kate # KDE default text editor
-    - konsole # KDE default terminal emulator
-    - htop # Useful for system monitor, but not necessary at this point
+    - nvtop
 
+replace:
+  - packages:
+      - old: lightdm
+        new: greetd
+        allow-erasing: true
