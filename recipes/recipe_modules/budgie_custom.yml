@@ -29,3 +29,6 @@ modules:
     system:
       enabled:
         - greetd.service
+      masked:
+        - sddm.service
+        
