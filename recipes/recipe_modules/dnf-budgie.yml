@@ -39,6 +39,7 @@ install:
 remove:
   auto-remove: true
   packages:
-    - nvtop
     - lightdm
-
+    - sddm
+    - htop
+    - nvtop
