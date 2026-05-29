@@ -5,7 +5,7 @@ modules:
         # Desktop Environment
         - greetd
         - tuigreet # Console greeter for greetd, more options
-        - pam
+        - fprintd-pam
 
     group-install:
       with-optional: true
