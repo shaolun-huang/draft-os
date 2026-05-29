@@ -5,18 +5,8 @@ repos:
       - sunwire/envycontrol
   nonfree: rpmfusion
 
-group-install:
-  with-optional: true
-  packages:
-    - budgie-desktop
-
 install:
   packages:
-    # Desktop Environment
-    - greetd
-    - tuigreet # Console greeter for greetd, more options
-    - pam
-
     # Terminal 
     - zsh
     - terminus-fonts-console
@@ -37,10 +27,3 @@ install:
     - fcitx5-chewing
     - kcm-fcitx5
 
-remove:
-  auto-remove: true
-  packages:
-    - lightdm
-    - sddm
-    - htop
-    - nvtop

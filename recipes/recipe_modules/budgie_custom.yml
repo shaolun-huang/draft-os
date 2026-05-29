@@ -1,0 +1,31 @@
+modules:
+  - type: dnf
+    install:
+      packages:
+        # Desktop Environment
+        - greetd
+        - tuigreet # Console greeter for greetd, more options
+        - pam
+
+    group-install:
+      with-optional: true
+      packages:
+        - budgie-desktop
+
+    remove:
+      auto-remove: true
+      packages:
+        - lightdm
+        - sddm
+        - htop
+        - nvtop
+  
+  - type: files
+    files: 
+      - source: my_etc
+        destination: /etc/
+
+  - type: systemd
+    system:
+      enabled:
+        - greetd.service
