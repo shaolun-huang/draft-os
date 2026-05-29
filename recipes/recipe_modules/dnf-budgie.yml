@@ -15,6 +15,7 @@ install:
     # Desktop Environment
     - greetd
     - tuigreet # Console greeter for greetd, more options
+    - pam
 
     # Terminal 
     - zsh

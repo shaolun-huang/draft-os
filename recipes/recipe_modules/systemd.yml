@@ -1,3 +1,8 @@
+type: files
+files: 
+  - source: my_etc
+    destination: /etc/
+
 type: systemd
 system:
   enabled:
